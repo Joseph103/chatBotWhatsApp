@@ -4,7 +4,7 @@ import express = require('express');
 import bodyParser = require('body-parser');
 import request = require('request');
 
-let app = express
+let app = express();
 let url: string = 'https://eu18.chat-api.com/instance19951/message?token=z4brc8usiyl6dzi8';
 
 

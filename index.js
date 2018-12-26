@@ -22,6 +22,13 @@ app.post('/my_webhook_url', function(req, res) {
   
 
 
+let server = app.listen(process.env.PORT, function() {
+    let host = server.address().address;
+    let port = server.address().port;
+    console.log("El servidor se encuentra en el puerto " + port + " y el host es " + host);
+  });
+  
+  
   function sendMessage(data) {
     request({
       url: url,
@@ -50,14 +57,3 @@ app.post('/my_webhook_url', function(req, res) {
     return mensaje;
   }
   // 104.198.179.226
-
-
-
-var server = app.listen(9320, function() {
-    var host = server.address().address;
-    var port = server.address().port;
-    console.log("El servidor se encuentra en el puerto " + 9320 + " y el host es " + host);
-  });
-  
-  
- 
