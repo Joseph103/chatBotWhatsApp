@@ -10,6 +10,7 @@ app.post('/my_webhook_url', function (req, res) {
     var data = req.body; // New messages in the "body" variable
     data.messages.forEach(function (element) {
         var message = element;
+        sendChangedFlujo(message, '');
     });
     res.sendStatus(200); //Response does not matter
 });

@@ -15,7 +15,7 @@ app.post('/my_webhook_url', function(req, res) {
     let data = req.body; // New messages in the "body" variable
     data.messages.forEach((element: any) => { // For each message
       let message = element;
-      
+      sendChangedFlujo(message,'');
     });
     res.sendStatus(200); //Response does not matter
   });
