@@ -5,7 +5,7 @@ import bodyParser = require('body-parser');
 import request = require('request');
 
 let app = express
-let url: string = 'https://eu9.chat-api.com/instance12079/message?token=t2sp5yanmkltwwbp';
+let url: string = 'https://eu18.chat-api.com/instance19951/message?token=z4brc8usiyl6dzi8';
 
 
 app.use(bodyParser.json());
